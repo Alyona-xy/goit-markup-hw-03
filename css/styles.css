@@ -21,10 +21,14 @@ body    {
 .link {
     text-decoration: none;
     display: block;
+    margin: 0;
 }
 
 .list {
-    list-style: none
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
 }
 
 .container {
@@ -41,6 +45,12 @@ h1 {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    margin: 0;
 }
 /* Header*/
 .logo {
@@ -60,7 +70,6 @@ img {
 .header .container {
     display:flex;
     justify-content: space-between;
-    margin-bottom: 47px;
 }
 
 .navigation {
@@ -132,13 +141,11 @@ color: var(--primary-text-color);
 
 /* Hero */
 .hero {
+text-align: center;
 padding-left: 452px;
 padding-bottom: 200px;
 padding-top: 200px;
 padding-right: 452px;
-margin-right: 0px;
-margin-left: 0px;
-margin-bottom: 94px;
 }
 
 .hero-title {
@@ -149,6 +156,10 @@ text-align: center;
 text-transform: uppercase;
 /* color: var(--background-color) */
 color: tomato;
+width: 696px;
+height: 120px;
+margin-left: auto;
+margin-right: auto;
 margin-bottom: 30px;
 }
 
@@ -157,6 +168,8 @@ margin-bottom: 30px;
     color: var(--background-color);
     display:block;
     margin: auto;
+    border: 0px;
+    height: 50px;
 }
 
 .button-text {
@@ -166,11 +179,14 @@ line-height: 1.87;
 text-align: center;
 letter-spacing: 0.06em;
 color: var(--background-color);
+padding-left: 32px;
+padding-right: 32px;
 }
 
 /* About us */
 .about-us {
-    margin-bottom: 94px;
+    padding-bottom: 94px;
+    padding-top: 94px;
 }
 
 .about-us-list {
@@ -188,7 +204,7 @@ margin-bottom: 30px;
 }
 
 .about-us-list-item-title {
-    margin-bottom: 10px;
+margin: 10px;
 }
 
 .about-us-list-item-title,
@@ -205,17 +221,18 @@ color: var(--title-text-color);
 font-weight: 400;
 line-height: 1.71;
 letter-spacing: 0.03em;
+margin: 0;
 }
 
 /* Services */
 .services {
+    padding-top: 94px;
+    padding-bottom: 94px;
    margin-bottom: 0px;
 }
 
 .services .container {
 display:flex;
-margin-top: 0px;
-margin-bottom: 94px;
 }
 
 .services-list-item:not(:last-child) {
@@ -239,8 +256,8 @@ line-height: 1.17;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--title-text-color);
-margin-bottom: 50px;
 margin-top: 0px;
+margin-bottom: 50px;
 }
 
 /* Our team */
@@ -290,18 +307,23 @@ margin-bottom: 16px;
 }
 
 .social-links {
-display: flex;
-padding-left: 0px;
-justify-content: center;
+    display: flex;
+    justify-content: center;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
+.social-links-item {
+    width: 44px;
+    height: 44px;
+}
 .social-links-item:not(:last-child) {
     margin-right: 10px;
 }
 
 /* Constant clients */
 .constant-clients {
-    padding-top: 132px;
+    padding-top: 94px;
     padding-bottom: 94px;
 }
 
@@ -328,20 +350,23 @@ justify-content: center;
 }
 
 /* Footer*/
-.footer-info .logo {
-    /* color: var(--background-color); */
-    color: tomato;
+.footer-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2F303A; 
 }
 
 .footer-container .container {
     display:flex;
     align-items: baseline;
-    padding-top: 60px;
-    padding-bottom: 60px;
     }
 
-.logo {
+.footer-info {
+    margin-right: 69px;
+}
+.footer-info .logo {
     margin-bottom: 20px;
+    color: var(--background-color);
 }
 
 .footer-contacts-list {
@@ -358,8 +383,7 @@ font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
-/* color: var(--background-color); */
-color: tomato;
+color: var(--background-color); 
 }
 
 .text-address {
@@ -367,24 +391,32 @@ font-style: normal;
 font-weight: 400;
 line-height: 1.71;
 letter-spacing: 0.03em;
-/* color: var(--background-color); */
-color: tomato;
+color: var(--background-color);
 }
 
 .footer-info .address {
 font-style: normal;
 text-decoration: none;
-/* color:  rgba(255, 255, 255, 0.6) */
-color: tomato;
+color:  rgba(255, 255, 255, 0.6)
     }
 
-.services-list-item-title {
-    margin-bottom: 20px;
-}
-.social-links {
+/* Social links part*/
+.footer-social-links .social-links-list {
     display: flex;
+    text-align: left;
+}
+    
+.social-list-item-title {
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--background-color);
+margin-bottom: 20px;
 }
 
+.footer-social-links
 .social-links-item:not(:last-child) {
     margin-right: 10px;
 }
