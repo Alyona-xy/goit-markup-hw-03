@@ -142,10 +142,15 @@ color: var(--primary-text-color);
 /* Hero */
 .hero {
 text-align: center;
+}
+
+.hero .container {
 padding-left: 452px;
-padding-bottom: 200px;
-padding-top: 200px;
 padding-right: 452px;
+padding-top: 200px;
+padding-bottom: 200px;
+width: 696px;
+height: 200px;
 }
 
 .hero-title {
@@ -156,10 +161,6 @@ text-align: center;
 text-transform: uppercase;
 /* color: var(--background-color) */
 color: tomato;
-width: 696px;
-height: 120px;
-margin-left: auto;
-margin-right: auto;
 margin-bottom: 30px;
 }
 
@@ -426,8 +427,8 @@ margin-bottom: 20px;
 
 .portfolio .container {
     display: flex;
-    margin-top: 47px;
-    margin-bottom: 50px;
+    padding-top: 94px;
+    padding-bottom: 50px;
     justify-content: center;
 }
 
@@ -444,27 +445,39 @@ text-align: center;
 letter-spacing: 0.03em;
 color: var(--title-text-color);
 background-color: #F5F4FA;
+border-color: transparent;
 border-radius: 4px;
+padding-left: 22px;
+padding-bottom: 6px;
+padding-right: 22px;
+padding-top: 6px;
 }
 
 .portfolio-filter-list-button:hover,
 .portfolio-filter-list-button:focus {
 color: var(--background-color);
 background-color: var(--accent-color);
+border-color: transparent;
 }
 
 /* Проекты */
 .portfolio-container .container {
     display:flex;
     flex-wrap: wrap;
-    margin-bottom: 94px;
+    justify-content: flex-start;
+    padding-top: 0px;
+    padding-bottom: 94px;
 }
 
 .portfolio-projects-list-item {
+    margin-left: 0px;
     margin-right: 30px;
     margin-bottom: 30px;
-    width: 380px;
-    align-items: left;
+    width: 370px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+
 }
 
 .portfolio-projects-list-item:nth-child(3n) {
@@ -477,7 +490,9 @@ background-color: var(--accent-color);
 
 .portfolio-projects-list-item-img {
     align-items: center;
+    width: 370px;
     margin-bottom: 20px;
+    
 }
 
 .portfolio-projects-list-item-title {
@@ -487,7 +502,7 @@ line-height: 2.0;
 letter-spacing: 0.06em;
 color: var(--title-text-color);
 margin-bottom: 4px;
-margin-left: 24px;
+padding-left: 24px;
 }
 
 .portfolio-projects-list-item-text {
@@ -496,7 +511,8 @@ font-size: 16px;
 line-height: 1.87;
 letter-spacing: 0.03em;
 color: var(--primary-text-color);
-margin-left: 24px;
+padding-left: 24px;
+padding-bottom: 24px;
 }
 
 .portfolio-projects-description {
